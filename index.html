@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Notes
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-dark.css">
+</head>
+
+<body>
+    
+    <div class="conteudo">
+        <div class="topo">
+            <input type="text" id="NovaTarefa" placeholder="Adicione uma anotação">
+            <button id="AddTarefa">
+                <i class="fa fa-plus"></i>
+            </button>
+            <button id="theme">
+                <img src="./theme.png" alt="mudar tema" width="35">
+            </button>
+        </div>
+        <ul id="listaTarefas" >
+        </ul>
+    </div>
+
+    <div id="janelaEdicao">
+        <button id="janelaEdicaoFechar">
+            <i class="fa fa-remove fa-2x"></i>
+        </button>
+        <h2 id="idTarefaEdicao"></h2>
+        <hr>
+        <form class="frm-linha">
+            <label for="mudarONomeDaTarefa">
+                Nome
+            </label>
+            <input type="text" id="mudarONomeDaTarefa" placeholder="Digite aqui o novo nome da tarefa">
+            <button id="AtualizarTarefa">
+                Salvar
+            </button>
+        </form>
+    </div>
+
+    <div id="janelaEdicaoFundo"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
