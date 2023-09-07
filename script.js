@@ -130,7 +130,7 @@ function obterIndiceTarefaPorId(idTarefa) {
 }
 
 function excluir(idTarefa) {
-    let confirmacao = window.confirm('Tem certeza?');
+    let confirmacao = window.confirm('Are you sure?');
     if (confirmacao) {
         const indiceTarefa = obterIndiceTarefaPorId(idTarefa);
         dbTarefas.splice(indiceTarefa, 1);
